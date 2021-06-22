@@ -1,0 +1,22 @@
+.mockup-mobile {
+    opacity: 0.5;
+    z-index: -10;
+    position: absolute;
+}
+
+.mockup-desktop {
+    opacity: 0.5;
+    z-index: -10;
+    position: absolute;
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .mockup-mobile {
+        display: none;
+    }
+
+    .mockup-desktop {
+        display: block;
+    }
+}

@@ -1,0 +1,92 @@
+.client-testimonials {
+    padding: 6.4rem 2rem 2rem;
+    //border: 1px solid black;
+
+    h2 {
+        font-family: 'Fraunces', serif; //700 or 900
+        font-weight: 900;
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+    }
+
+    .clients-wrapper {
+        padding: 3rem 0;
+
+        .client {
+            //border: 1px solid red;
+            margin: 0.6rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            padding: 2.4rem 0.2rem;
+
+            img {
+                //opacity: 0.5;
+                width: 22%;
+                border-radius: 50%;
+            }
+
+            .testimonial {
+                font-size: 1.8rem;
+                text-align: center;
+                padding: 3.4rem 0 3.1rem 0;
+                line-height: 3.2rem;
+                color: $dark-grayish-blue;
+            }
+
+            .name {
+                font-family: 'Fraunces', serif; //700 or 900
+                font-weight: 900;
+                font-size: 1.8rem;
+                color: $very-dark-desaturated-blue;
+            }
+
+            .position {
+                font-size: 1.4rem;
+                color: $grayish-blue;
+                padding: 1.2rem 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .client-testimonials {
+        padding: 16rem 2rem 7rem;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .clients-wrapper {
+            //border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 3rem;
+
+            .client {
+                //border: 1px solid green;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: stretch;
+                width: 25.5%;
+
+                padding: 4rem 0;
+
+                .testimonial {
+                    padding: 5.4rem 0 7rem 0;
+                }
+            }
+        }
+
+
+    }
+}

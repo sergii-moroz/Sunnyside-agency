@@ -1,0 +1,194 @@
+.middle-section {
+    .img-desktop {
+        display: none;
+        width: 100%;
+        //opacity: 0.5;
+    }
+
+    .img-mobile {
+        display: block;
+        width: 100%;
+        //opacity: 0.5;
+    }
+
+    .text-block {
+        //border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 6rem 3rem;
+
+        .titel {
+            font-family: 'Fraunces', serif; //700 or 900
+            font-weight: 900;
+            font-size: 3.2rem;
+            text-align: center;
+            color: $very-dark-desaturated-blue;
+        }
+
+        .description {
+            font-size: 1.75rem;
+            text-align: center;
+            margin: 2.5rem 0 3.5rem 0;
+            line-height: 3rem;
+            color: $dark-grayish-blue
+        }
+
+        .btn-wrapper {
+            //border: 1px solid magenta;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            a {
+                font-family: 'Fraunces', serif; //700 or 900
+                font-weight: 900;
+                font-size: 1.7rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $very-dark-desaturated-blue;
+                padding: 0 0.7rem;
+            }
+
+            .link-decoration {
+                position: relative;
+                width: 90%;
+                height: 0.7rem;
+                transform: translateY(-0.7rem);
+                z-index: -1;
+                border-radius: 0.5rem;
+                opacity: 0.5;
+                transition: all 0.5s ease;
+            }
+
+            .yellow {
+                background-color: $yellow;
+            }
+
+            .red {
+                background-color: $soft-red;
+            }
+
+            &:hover {
+                .link-decoration {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .block-wrapper {
+        position: relative;
+
+        .text-block-overlay {
+            position: absolute;
+            z-index: 1;
+            top: 66%;
+            padding: 0 2rem;
+
+            .titel {
+                font-family: 'Fraunces', serif; //700 or 900
+                font-weight: 900;
+                font-size: 2.8rem;
+                text-align: center;
+            }
+
+            .description {
+                font-size: 1.55rem;
+                text-align: center;
+                line-height: 2.7rem;
+                margin: 2.8rem 0;
+            }
+
+            .green-tint {
+                color: $dark-desaturated-cyan
+            }
+
+            .blue-tint {
+                color: $dark-blue;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .middle-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .img-mobile {
+            display: none;
+        }
+
+        .img-desktop {
+            display: block;
+            flex: 50%;
+        }
+
+        .text-block {
+            flex: 50%;
+
+            align-items: flex-start;
+
+            
+
+            .titel {
+                font-size: 3.95rem;
+                text-align: left;
+            }
+
+            .description {
+                text-align: left;
+                line-height: 3rem;
+                font-size: 1.76rem;
+                margin: 3.2rem 0 4rem 0;
+            }
+        }
+
+        .text-block-left {
+            padding: 0 11rem 0 16.5rem;
+        }
+
+        .text-block-right {
+            padding: 0 16.5rem 0 11rem;
+        }
+
+        .flex-order-1 {
+            order: 1;
+        }
+
+        .flex-order-2 {
+            order: 2;
+        }
+
+        .flex-order-3 {
+            order: 3;
+        }
+
+        .flex-order-4 {
+            order: 4;
+        }
+
+        .flex-order-5 {
+            order: 5;
+        }
+
+        .flex-order-6 {
+            order: 6;
+        }
+
+        .block-wrapper {
+            width: 50%;
+
+            .text-block-overlay {
+                padding: 0 19rem;
+            }
+        }
+    }
+}
